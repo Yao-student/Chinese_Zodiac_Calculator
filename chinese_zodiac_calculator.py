@@ -43,7 +43,7 @@ class CZ_cal(wx.Frame):
             year = int(self.text_box.GetValue())
             
             ad = (year - 1) % 12 # 计算公元年份的表达式
-            bc = (year - 1) % 10 # 计算公元前年份生肖的表达式
+            bc = -((abs(year) - 1) % 12+1) # 计算公元前年份生肖的表达式
             z = ['鸡', '狗', '猪', '鼠', '牛', '虎', '兔', '龙', '蛇', '马', '羊', '猴'] # 所有生肖
 
             # 判断年份为公元后、公元前还是0并输出结果
@@ -52,7 +52,7 @@ class CZ_cal(wx.Frame):
             elif year == 0:
                 self.result.SetLabelText('没有公元0年。')
             else:
-                self.result.SetLabelText(z[bc + 1])
+                self.result.SetLabelText(z[bc])
         except ValueError as e:
             self.result.SetLabelText('请输入整数。')
         finally:
