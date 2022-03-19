@@ -3,4 +3,4 @@
 - 查看更新请点击页面右边的*Release*。
 - 下载新版本请点击页面右上角的绿色*Code*按钮，再点击*Download ZIP*下载压缩包。
 - *生肖计算器.exe*和*icon.ico***不要删**，*README.md*可以删，**但删了怕你忘了怎么操作**。
-- 这是 [网址](https://github.com/Yao-student/Chinese-Zodiac-Calculator)。
+- 这是 [网址](https://github.com/Yao-student/Chinese_Zodiac_Calculator)。
